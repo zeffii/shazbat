@@ -3,22 +3,23 @@ shazbat
 
 explorations in Kivy nodes
 
-
-
 'futura'
 node based geometry app for kivy.
 Relies on Numpy and Python 3.4
 
 MIT license (c) Dealga McArdle
 
---------- Road map ----------
+Road map
+=======
+
 
 [ ] ---- Milestone 1
 
 [ ] node definitions 1
   [ ] sockets
-    [ ] key lists (edges, faces)
+    [ ] key lists (edges, faces)  
 
+``` 
         key_dict = {
             'type': {'edges','faces'}
             'data_faces': [
@@ -30,9 +31,11 @@ MIT license (c) Dealga McArdle
                 {'edges': [[....]]}
             ]
         }
+```
 
-    [ ] vector lists
+  [ ] vector lists
 
+```
         vec_dict = {
             'type': {'vec3','vec4'}
             'data_vec3': [
@@ -44,6 +47,7 @@ MIT license (c) Dealga McArdle
                 {'vec4': [[....]]}
             ]
         }
+```
 
   [ ] sliders 
     [ ] min, max, step (modifyable at runtime)
