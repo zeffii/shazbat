@@ -30,8 +30,9 @@ Road map
   [ ] move nodes
   [ ] nodes zoom
   [ ] node list
-  [ ] catagories [ ] icons
-  [ ] add nodes from list
+    [ ] categories 
+    [ ] icons
+    [ ] add nodes from list
 
 [ ] ---- Milestone 2
 
