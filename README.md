@@ -19,37 +19,7 @@ Road map
 
   [ ] sockets  
   [ ] key lists (edges, faces)  
-
-``` 
-key_dict = {
-    'type': {'edges','faces'}
-    'data_faces': [
-        {'faces': [[....]]}, 
-        {'faces': [[....]]}
-    ],
-    'data_edges': [
-        {'edges': [[....]]}, 
-        {'edges': [[....]]}
-    ]
-}
-```
-
   [ ] vector lists
-
-```
-vec_dict = {
-    'type': {'vec3','vec4'}
-    'data_vec3': [
-        {'vec3': [[....]]}, 
-        {'vec3': [[....]]}
-    ],
-    'data_vec4': [
-        {'vec4': [[....]]}, 
-        {'vec4': [[....]]}
-    ]
-}
-```
-
   [ ] sliders 
     [ ] min, max, step (modifyable at runtime)
   [ ] bool 
@@ -76,3 +46,38 @@ vec_dict = {
   [ ] int
   [ ] float
 
+
+SocketTypes
+======
+
+edges, faces
+
+``` 
+key_dict = {
+    'type': {'edges','faces'}
+    'data_faces': [
+        {'faces': [[....]]}, 
+        {'faces': [[....]]}
+    ],
+    'data_edges': [
+        {'edges': [[....]]}, 
+        {'edges': [[....]]}
+    ]
+}
+```
+
+verts
+
+```
+vec_dict = {
+    'type': {'vec3','vec4'}
+    'data_vec3': [
+        {'vec3': [[....]]}, 
+        {'vec3': [[....]]}
+    ],
+    'data_vec4': [
+        {'vec4': [[....]]}, 
+        {'vec4': [[....]]}
+    ]
+}
+```
