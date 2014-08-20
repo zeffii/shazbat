@@ -15,9 +15,10 @@ Road map
 
 [ ] ---- Milestone 1
 
-[ ] node definitions 1
-  [ ] sockets
-    [ ] key lists (edges, faces)  
+[ ] node definitions 1   
+
+  [ ] sockets  
+  [ ] key lists (edges, faces)  
 
 ``` 
 key_dict = {
