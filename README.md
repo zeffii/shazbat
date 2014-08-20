@@ -12,7 +12,7 @@ MIT license (c) Dealga McArdle
 Road map
 =======
 
-'''
+```
 
 [ ] ---- Milestone 1
 
@@ -47,7 +47,7 @@ Road map
   [ ] int
   [ ] float
 
-'''
+```
 
 SocketTypes
 ======
