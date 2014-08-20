@@ -14,9 +14,7 @@ Road map
 
 ```
 
-[ ] ---- Milestone 1
-
-[ ] node definitions 1   
+[ ] ---- Milestone 1 ( node definitions 1 )
 
   [ ] sockets  
   [ ] key lists (edges, faces)  
@@ -26,26 +24,28 @@ Road map
   [ ] bool 
   [ ] enum 
   [ ] node theme
-[ ] move nodes
-[ ] nodes connecting in / out
+  [ ] move nodes
+  [ ] nodes connecting in / out
   [ ] wire types, themeable
-
-[ ] nodes zoom
-[ ] node list
+  [ ] nodes zoom
+  [ ] node list
   [ ] catagories [ ] icons
-[ ] add nodes from list
+  [ ] add nodes from list
 
 
-[ ] ---- Milestone 2
+[ ] ---- Milestone 2 (node definitions 2)
 
-[ ] node definitions 1
-  [ ] box [ ] column [ ] row [ ] percentage row
-[ ] node widgets
-  [ ] graph [ ] tabbed graph [ ] color picker
-
-[ ] slider node
-  [ ] int
-  [ ] float
+  [ ] layout
+    [ ] box 
+    [ ] column 
+    [ ] row 
+    [ ] percentage row
+  [ ] node widgets
+    [ ] graph [ ] tabbed graph [ ] color picker
+  
+  [ ] slider node
+    [ ] int
+    [ ] float
 
 ```
 
