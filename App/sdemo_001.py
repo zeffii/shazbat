@@ -23,7 +23,7 @@ def tc(*args):
     return sumtext
 
 
-class TutorialApp(App):
+class NodeView(App):
     def build(self):
         b = BoxLayout(orientation='vertical')
 
@@ -31,11 +31,10 @@ class TutorialApp(App):
         s = Scatter()
 
         f.add_widget(s)
-        #s.canvas.add(Color(0.3, 0.3, 0.3))
-        #s.canvas.add(Rectangle(size=(400, 100)))
+
         with s.canvas:
             Color(0.3, 0.3, 0.3)
-            Rectangle(size=(400, 100))
+            Rectangle(size=(250, 500))
 
         l = Label(
             text=tc(('ff3333', 'Hello '), ('aaeeff', 'World')),
@@ -46,4 +45,4 @@ class TutorialApp(App):
         return b
 
 if __name__ == "__main__":
-    TutorialApp().run()
+    NodeView().run()

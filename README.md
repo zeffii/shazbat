@@ -16,8 +16,12 @@ Road map
 
 [ ] ---- Milestone 1
 
-  [ ] bool 
-  [ ] enum
+  [ ] properties
+    [ ] bool 
+    [ ] enum
+    [ ] float
+    [ ] int
+    [ ] str
   [ ] layout
     [ ] box 
     [ ] column 
@@ -26,7 +30,8 @@ Road map
   [ ] sliders 
     [ ] min, max, step (modifyable at runtime)
   [ ] node theme
-    [ ] wire types, themeable
+    [ ] wire types (to match data)
+    [ ] wire smoothness
   [ ] move nodes
   [ ] nodes zoom
   [ ] node list

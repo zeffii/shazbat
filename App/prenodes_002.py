@@ -3,6 +3,7 @@ Experiments with Kivy drawing.
 '''
 from math import sin, cos, pi
 
+from kivy.uix.scatter import Scatter
 from kivy.uix.button import Button
 from kivy.uix.widget import Widget
 from kivy.uix.label import Label
@@ -141,13 +142,17 @@ def draw_buttons(pos):
     pass
 
 
-class StressCanvasApp(App):
+class NodeViewApp(App):
 
-    def add_node_background(self, label, wid, count, *largs):
+    def add_node(self, label, f, count, *largs):
         label.text = str(int(label.text) + count)
-        with wid.canvas:
 
-            x, y = xy = (int(r() * wid.width + wid.x), int(r() * wid.height + wid.y))
+        s = Scatter()
+        f.add_widget(s)            
+        with s.canvas:
+
+            # x, y = xy = (int(r() * wid.width + wid.x), int(r() * wid.height + wid.y))
+            x, y = xy = (0, 0)
             width = node_specs.width
             height = node_specs.rows * theme.row_height
             radius = theme.body.radius
@@ -178,9 +183,11 @@ class StressCanvasApp(App):
             dims3.h = height - (theme.header.height)
             dims3.w = width
             draw_rounded_rect(
-                pos=(x, y+height-radius), col=border_col, dims=dims3, div=div)
+                pos=(x, y+height-radius), 
+                col=border_col, dims=dims3, div=div)
 
             # draw_buttons(pos=xy)
+
 
     def reset_rects(self, label, wid, *largs):
         label.text = '0'
@@ -188,16 +195,18 @@ class StressCanvasApp(App):
 
     def build(self):
         wid = Widget()
+        f = FloatLayout()
+        wid.add_widget(f)
 
         label = Label(text='0')
 
         btn_add100 = Button(
             text='+ new node',
-            on_press=partial(self.add_node_background, label, wid, 1))
+            on_press=partial(self.add_node, label, f, 1))
 
         btn_reset = Button(
             text='Reset',
-            on_press=partial(self.add_node_background, label, wid))
+            on_press=partial(self.add_node, label, f))
 
         layout = BoxLayout(size_hint=(1, None), height=50)
         layout.add_widget(btn_add100)
@@ -211,4 +220,4 @@ class StressCanvasApp(App):
         return root
 
 if __name__ == '__main__':
-    StressCanvasApp().run()
+    NodeViewApp().run()
